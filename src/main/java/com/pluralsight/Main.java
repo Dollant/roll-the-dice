@@ -11,7 +11,7 @@ public class Main {
         int sixCounter =  0;
         int sevenCounter = 0;
 
-        for (int i = 1; i <= 100; i++); {
+        for (int i = 1; i <= 100; i++) {
             roll1 = dice.roll();
             roll2 = dice.roll();
 
@@ -25,5 +25,10 @@ public class Main {
             if (sum == 7) sevenCounter++;
 
         }
+        System.out.println("\n₊✩‧₊˚౨ৎ˚₊✩‧₊₊✩‧₊˚౨ৎ˚₊✩‧₊");
+        System.out.println("Number of 2s:  " + twoCounter);
+        System.out.println("Number of 4s:  " + fourCounter);
+        System.out.println("Number of 6s:  " + sixCounter);
+        System.out.println("Number of 7s:  " + sevenCounter);
     }
 }
