@@ -18,10 +18,15 @@ public class Roll {
 
             System.out.printf("Roll %d: %d + %d  Sum: %d%n", i, roll1, roll2, sum);
 
-            if (sum == 2) twoCounter++;
-            if (sum == 4) fourCounter++;
-            if (sum == 6) sixCounter++;
-            if (sum == 7) sevenCounter++;
+            if (sum == 2) {
+                twoCounter++;
+            } else if (sum == 4) {
+                fourCounter++;
+            } else if (sum == 6) {
+                sixCounter++;
+            } else if (sum == 7) {
+                sevenCounter++;
+            }
 
         }
         System.out.println("\n₊✩‧₊˚౨ৎ˚₊✩‧₊₊✩‧₊˚౨ৎ˚₊✩‧₊");
