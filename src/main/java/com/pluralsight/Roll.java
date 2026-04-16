@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class Main {
+public class Roll {
     public static void main(String[] args) {
 
         Dice dice = new Dice();
@@ -14,10 +14,9 @@ public class Main {
         for (int i = 1; i <= 100; i++) {
             roll1 = dice.roll();
             roll2 = dice.roll();
-
-            System.out.println("Roll " + i + ":    " + roll1 + "  -  " + roll2 + "  Sum:  " + (roll1 + roll2));
-
             int sum = roll1 + roll2;
+
+            System.out.printf("Roll %d: %d + %d  Sum: %d%n", i, roll1, roll2, sum);
 
             if (sum == 2) twoCounter++;
             if (sum == 4) fourCounter++;
