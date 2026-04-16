@@ -5,6 +5,7 @@ public class Main {
 
         Dice dice = new Dice();
         int roll1, roll2;
+
         int twoCounter = 0;
         int fourCounter = 0;
         int sixCounter =  0;
@@ -15,6 +16,14 @@ public class Main {
             roll2 = dice.roll();
 
             System.out.println("Roll " + i + ":    " + roll1 + "  -  " + roll2 + "  Sum:  " + (roll1 + roll2));
+
+            int sum = roll1 + roll2;
+
+            if (sum == 2) twoCounter++;
+            if (sum == 4) fourCounter++;
+            if (sum == 6) sixCounter++;
+            if (sum == 7) sevenCounter++;
+
         }
     }
 }
